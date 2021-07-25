@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  
+<head>
+
+    <title> control panel </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> control interface </title>
+
+    <link rel="stylesheet" href="stylle.css">
+
+</head>
+<body>
+    <form action = "controll.php" method ="post"> 
+        <div class=M> <h1 style="color:white">control panel</h1></div>
+       
+    
+<div class= "container">
+    <br>
+    <br>
+<button class="btn-1" name="Forward">Forward</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button class="btn-2" name="Left">Left</button>
+<button class="btn-3" name="Right">Right</button>
+<br>
+<br>
+<br>
+<button class="btn-4" name="Backward">Backward</button>
+<br>
+<br>
+<button class="btn-5" name="Stop">Stop</button>
+
+
+</div>
+    </form>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "ab2d1712-84d3-4260-8c46-bab3d72dbab2", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "9fc0413b-931c-4634-905a-e0a95b5f7c67", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
